@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header{font-family: Roboto;}
+.navbar{
+background-color: white;
+width :100%;
+margin-bottom: 100px;
+display: flex ;
+justify-content: space-around;
+align-items: center;
+top: 0%;
+position: fixed;
+padding: 10px;
+z-index: 999;
+
+
+
+    
+} 
+.image1{
+    font-size: 34px;
+line-height: 68px;
+height: 33px;
+width :30%;
+
+padding: 10px;
+
+}
+.liste{
+    display: flex;
+    text-decoration: none;
+    height: 33px;
+    justify-content: center;
+    width: 120px;
+    
+}
+.liste a{
+    color: #ababab;
+}
+
+.aboutus{ color: mediumaquamarine;
+    display : flex ; 
+    margin: 10px;
+    
+}
+ .career{
+        display : flex ; 
+        margin: 10px;
+        text-decoration: none;
+     
+    }
+a{
+    text-decoration: none;
+color: black;}
+
+ a:hover{color: mediumaquamarine;}
+
+ .subliste {
+    text-decoration: none;
+    list-style: none;
+    display: none;
+    text-align: left;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    margin: 0 0 0 --100px;
+    padding: 10px 0 0 0;
+    top: 30px;
+    bottom: -220px;
+    right: 15.3px;
+    left: 0px;
+    z-index: 1;
+    cursor: pointer;
+
+
+ }
+
+li:hover .subliste{
+    display: block;
+    
+    background-color: #ffffffff;
+    box-shadow: -21px 57px 313px -87px rgba(0,0,0,0.59);
+    -webkit-box-shadow: -21px 57px 313px -87px rgba(0,0,0,0.59);
+    -moz-box-shadow: -21px 57px 313px -87px rgba(0,0,0,0.59);
+    
+ }
+ a:hover .subliste{
+    color: mediumaquamarine;
+ }
+
+ .subliste a {
+    line-height: 42px;
+    font-size: 15px;
+    
+    height: 42px;
+    width: 200px;
+    padding: 12px 16px 12px 16px;
+
+ }
+
+.departements{
+   
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+   height: 30px;
+   width: 105px;
+   padding: 0 9px 0 9px;
+  
+}
+
+ header{margin-top: 100px;}
+ 
+ .healthcare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
+ .abbes{
+    font-family: Work Sans;
+    font-size: 34px;
+    font-weight: 300 ;
+    /* line height: 44px; */
+    margin: 34px 0 34px 0;
+    color: #00b39b
+    
+ }
+.paragraphe {
+    display: flex;
+    justify-content: space-around;
+    height: 309px;
+    width: 1015px;
+    margin: 33px 252px 60px 252px;
+    padding: 0 20px 0 20px;
+    position: relative;
+    
+
+}
+.paragraphe p{
+    font-family: Roboto;
+    margin: 13px 0 13px 0;
+    height: 112px;
+    width: 477px;
+    color: #747474;
+    font-size: 16px;
+    line-height: 28px;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    margin: -180px 252px 40px 202px;
+    padding: 0 20px 0 20px;
+    width: 80%;
+
+
+}
+.patient{
+    background-color: #00ccb1;
+    color: aliceblue;
+    margin: 20px;
+    width: 411px;
+    height: 345px;
+    padding: 32px 32px 0px 32px; 
+    border-radius: 10px;
+    font-family: work sans;
+    font-weight: 300;
+    line-height: 29px;
+    font-size: 16px;
+
+    
+}
+.doctor{
+    background-color: #3d83df;
+    color: aliceblue;
+    margin: 20px;
+    width: 411px;
+    height: 345px;
+    padding: 32px 32px 0px 32px;
+    border-radius: 10px;
+    font-family: work sans;
+    font-weight: 300;
+    line-height: 29px;
+    font-size: 16px;
+}
+.clinic{
+    background-color: #1b2734;
+    color: aliceblue;
+    margin: 20px;
+    width: 411px;
+    height: 345px;
+    padding: 32px 32px 0px 32px;
+    border-radius: 10px;
+    font-family: work sans;
+    font-weight: 300;
+    line-height: 29px;
+    font-size: 16px;
+}
+
+
+
+.patient select {
+    background-color: #00ccb1;
+    border: none;
+    color: white;
+    margin-top: 50px;
+    text-decoration: underline;
+
+}
+.patient select option{
+background-color: white;
+color: black;
+
+}  
+
+.doctor select {
+   background-color: #3d83df;
+    border: none;
+    color: white;
+    margin-top: 80px;
+    text-decoration: underline;
+}
+
+.doctor select option{
+background-color: white;
+color: black;
+
+}  
+.clinic select {
+  background-color: #1b2734;
+     border: none;
+     color: white;
+     margin-top: 20px;
+     text-decoration: underline;
+ }
+ 
+ .clinic select option{
+
+ background-color: white;
+ color: black;
+ 
+ }  
+ .block p{
+    font-weight: 300;
+    font-size: 24px;
+ }
+ .block select{
+    font-weight: 300;
+    font-size: 24px;
+ }
+ .improve{
+    width: 100%;
+ }
+ .improve h5{
+    color: #00ccb1;
+    font-family: work sans;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+    line-height: 39px;
+    text-align: center;
+ }
+.improve p{
+    font-family: roboto;
+    font-size: 14px;
+    line-height: 24px;
+    height: 72px;
+    width: 460px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
