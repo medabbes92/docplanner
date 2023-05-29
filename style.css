@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header{font-family: Roboto;}
+/* header{font-family: Roboto;} */
 .navbar{
 background-color: white;
 width :100%;
@@ -51,11 +51,11 @@ padding: 10px;
         text-decoration: none;
      
     }
-a{
+.navbar a {
     text-decoration: none;
-color: black;}
+}
 
- a:hover{color: mediumaquamarine;}
+ .navbar a:hover{color: mediumaquamarine;}
 
  .subliste {
     text-decoration: none;
@@ -79,15 +79,17 @@ color: black;}
 
 li:hover .subliste{
     display: block;
+    margin-left: -100px;
     
     background-color: #ffffffff;
-    box-shadow: -21px 57px 313px -87px rgba(0,0,0,0.59);
-    -webkit-box-shadow: -21px 57px 313px -87px rgba(0,0,0,0.59);
-    -moz-box-shadow: -21px 57px 313px -87px rgba(0,0,0,0.59);
+    box-shadow: -1px 5px 13px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 5px 13px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 5px 13px -2px rgba(0,0,0,0.75);
     
  }
  a:hover .subliste{
     color: mediumaquamarine;
+   
  }
 
  .subliste a {
@@ -97,6 +99,7 @@ li:hover .subliste{
     height: 42px;
     width: 200px;
     padding: 12px 16px 12px 16px;
+   
 
  }
 
@@ -117,7 +120,7 @@ li:hover .subliste{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 33px 252px 60px 252px;
  }
 
  .abbes{
@@ -129,18 +132,18 @@ li:hover .subliste{
     color: #00b39b
     
  }
-.paragraphe {
+.parag {
     display: flex;
     justify-content: space-around;
     height: 309px;
     width: 1015px;
-    margin: 33px 252px 60px 252px;
+   
     padding: 0 20px 0 20px;
-    position: relative;
+    /* position: relative; */
     
 
 }
-.paragraphe p{
+.parag p{
     font-family: Roboto;
     margin: 13px 0 13px 0;
     height: 112px;
@@ -152,17 +155,26 @@ li:hover .subliste{
 .block {
     display: flex;
     justify-content: space-between;
-    margin: -180px 252px 40px 202px;
+    margin: -150px 252px 40px 202px;
     padding: 0 20px 0 20px;
-    width: 80%;
+    width: 75%;
 
+
+}
+
+.block h6{
+
+    font-size: 30px;
+    font-family: work sans;
+    margin-top: -10px;
+    font-weight: 500;
 
 }
 .patient{
     background-color: #00ccb1;
     color: aliceblue;
-    margin: 20px;
-    width: 411px;
+    
+    width: 311px;
     height: 345px;
     padding: 32px 32px 0px 32px; 
     border-radius: 10px;
@@ -176,8 +188,8 @@ li:hover .subliste{
 .doctor{
     background-color: #3d83df;
     color: aliceblue;
-    margin: 20px;
-    width: 411px;
+    margin: 0 20px 0 20px;
+    width: 311px;
     height: 345px;
     padding: 32px 32px 0px 32px;
     border-radius: 10px;
@@ -189,8 +201,8 @@ li:hover .subliste{
 .clinic{
     background-color: #1b2734;
     color: aliceblue;
-    margin: 20px;
-    width: 411px;
+    margin: 0 20px 0 20px;
+    width: 311px;
     height: 345px;
     padding: 32px 32px 0px 32px;
     border-radius: 10px;
@@ -208,6 +220,7 @@ li:hover .subliste{
     color: white;
     margin-top: 50px;
     text-decoration: underline;
+    cursor: pointer;
 
 }
 .patient select option{
@@ -220,13 +233,14 @@ color: black;
    background-color: #3d83df;
     border: none;
     color: white;
-    margin-top: 80px;
+    margin-top: 50px;
     text-decoration: underline;
 }
 
 .doctor select option{
 background-color: white;
 color: black;
+
 
 }  
 .clinic select {
@@ -252,7 +266,7 @@ color: black;
     font-size: 24px;
  }
 
-
+ 
 
  .container2{
     height: 157px;
@@ -382,7 +396,7 @@ color: black;
     margin-left: 25px;
     width: 331px;
     height: 361px;
-    border-radius: 10px;u
+    border-radius: 10px;
 }
 .subpays img{
     width: 100%;
@@ -424,4 +438,53 @@ color: black;
 .Bogota{
     margin-left: 240px;
     margin-top: 40px;
+}
+
+.extremite{
+    display: flex;
+    flex-direction: column;
+
+}
+.extremite p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: work sans;
+    color: #333333;
+}
+.extremite button{
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: roboto;
+    line-height: 12px;
+    color: white;
+    background-color: #3d83df;
+    border: none;
+    border-radius: 2px;
+    width: 210px;
+    height: 40px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+footer{
+    margin-top: 120px;
+}
+footer p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: roboto;
+    line-height: 12px;
+    color:#ababab;
+    border: none;
+    
+}
+footer p a{ color: #3d83df;
+    text-decoration: none;
+
+}
+footer p a:hover{
+    text-decoration: underline;
 }
