@@ -434,7 +434,13 @@ color: black;
     border: none;
   margin-right: -30px;
   border-radius: 5px;
+  cursor: pointer;
 }
+
+.subpays button:hover{
+    background-color: #4169E1;
+}
+
 .Bogota{
     margin-left: 240px;
     margin-top: 40px;
